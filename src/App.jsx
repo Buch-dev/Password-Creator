@@ -107,15 +107,16 @@ function App() {
   };
 
   return (
-    <div className="bg-[#18171F]">
+    <div className="bg-[#18171F] w-screen flex items-center justify-center p-4">
+      <div className="bg-[#18171F] text-center mx-auto">
       <header className="App-header text-2xl text-[#817D92]">
         Password Generator
       </header>
-      <div className="mt-8 relative">
+      <div className="mt-8 relative w-full">
         <input
           type="text"
           readOnly
-          className="bg-[#24232C] border w-[540px] h-20 p-7 text-[32px]"
+          className="bg-[#24232C] w-full md:w-[540px] h-20 p-7 text-[32px]"
           placeholder="Password"
           value={password}
           ref={passwordRef}
@@ -236,6 +237,8 @@ function App() {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 }
 
